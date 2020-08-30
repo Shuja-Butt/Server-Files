@@ -86,7 +86,7 @@ app.use(cors());
 
 
 app.post("/signin",signin.signin(db,bcryptjs));
-
+app.get("/",(req,res)=>{console.log("it si working")});
 //bcrypt.compareSync("not_bacon", hash); // false
 
  // db('users').insert(
